@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.service import Service
 import time # to sleep
 from selenium.webdriver.common.by import By
 
-URL = 'https://boards.greenhouse.io/gleanwork/jobs/4006898005'
+URL = 'https://boards.greenhouse.io/goodjobgames/jobs/4886728003'
 
 # Fill in this dictionary with your personal details!
 JOB_APP = {
@@ -24,7 +24,7 @@ JOB_APP = {
     # "location": "San Francisco, California, United States",
     # "grad_month": '06',
     # "grad_year": '2021',
-    # "university": "MIT" # if only o.O
+    # "university": "MIT" # if only o.O  
 }
 
 # Greenhouse has a different application form structure than Lever, and thus must be parsed differently
@@ -66,7 +66,7 @@ def greenhouse(driver):
     except NoSuchElementException:
         pass
     
-    # add linkedin
+    # Do you know anyone
     try:
         driver.find_element(By.XPATH, "//label[contains(.,'Do you know anyone')]").send_keys('No')
     except NoSuchElementException:

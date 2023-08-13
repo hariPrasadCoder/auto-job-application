@@ -3,7 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 import os # to get the resume file
 import time # to sleep
-import get_links
+import deprecated.get_links as get_links
 
 # sample application links if we don't want to run get_links.py
 URL_l2 = 'https://jobs.lever.co/scratch/2f09a461-f01d-4041-a369-c64c1887ed97/apply?lever-source=Glassdoor'
